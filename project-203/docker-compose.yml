@@ -11,7 +11,7 @@ services:
         networks:
             - clarusnet
     myapp:
-        image: selimm/bookstore-api:1.0
+        build: .
         restart: always
         depends_on:
             - database
